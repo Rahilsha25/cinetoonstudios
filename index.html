@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title Tag (Primary Keyword in Title) -->
+    <title>Cinetoon Studios | Game Development & Web Design Services</title>
+
+    <!-- Meta Description (150-160 Characters, Must Include Keywords) -->
+    <meta name="description" content="Cinetoon Studios specializes in game development, web design, digital marketing, and branding. We craft engaging gaming experiences, stunning websites, and powerful SEO solutions to boost your brand.">
+
+    <!-- Meta Keywords (Not heavily used by Google, but good for Bing/Yahoo) -->
+    <meta name="keywords" content="game development, web design, digital marketing, SEO services, branding, graphic design, mobile app development">
+
+    <!-- Meta Robots (Controls Indexing) -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Canonical Tag (Avoid Duplicate Content Issues) -->
+    <link rel="canonical" href="https://www.cinetoonstudios.com/">
+
+    <!-- Open Graph Tags (For Social Media Sharing - Facebook, LinkedIn, etc.) -->
+    <meta property="og:title" content="Cinetoon Studios | Game Development & Web Design Services">
+    <meta property="og:description" content="We create stunning games, websites, and digital experiences that captivate and engage.">
+    <meta property="og:image" content="https://www.cinetoonstudios.com/assets/og-image.jpg">
+    <meta property="og:url" content="https://www.cinetoonstudios.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card (For Twitter Sharing) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cinetoon Studios | Game Development & Web Design Services">
+    <meta name="twitter:description" content="We create immersive games, stunning websites, and powerful digital marketing solutions.">
+    <meta name="twitter:image" content="https://www.cinetoonstudios.com/assets/twitter-image.jpg">
+    
+    <!-- Author Meta Tag -->
+    <meta name="author" content="Cinetoon Studios">
+
+    <!-- Geo Meta Tags (For Local SEO - If Targeting a Specific Location) -->
+    <meta name="geo.region" content="IN-GJ">
+    <meta name="geo.placename" content="Anand, Gujarat">
+    <meta name="geo.position" content="22.5645;72.9288">
+    <meta name="ICBM" content="22.5645, 72.9288">
+
+    <!-- Favicon (Important for Branding) -->
+    <link rel="icon" href="../Cinetoon/assets/favicon.ico" type="image/x-icon">
+
+    <!-- Schema Markup (For Rich Results in Google) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Cinetoon Studios",
+        "url": "https://www.cinetoonstudios.com/",
+        "logo": "https://www.cinetoonstudios.com/assets/logo.png",
+        "description": "Cinetoon Studios specializes in game development, web design, digital marketing, and branding.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91 8288983969",
+            "contactType": "customer service",
+            "areaServed": "IN",
+            "availableLanguage": "English, Hindi, Gujarati"
+        },
+        "sameAs": [
+            "https://www.facebook.com/CinetoonStudios",
+            "https://www.instagram.com/cinetoonstudios",
+            "https://www.linkedin.com/company/cinetoon-studios",
+            "https://www.youtube.com/cinetoonstudios"
+        ]
+    }
+    </script>
+
+
+    <!--CSS Files -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <!--JavaScrit Files-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+    <!--Main JS File-->
+    <script src="./js/script.js" defer></script>
+
+
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <span>Loading...</span>
+    </div>
+
+    <!-- Background Animation -->
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="brand-name"><a href="./index.html">CINETOON</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="assets/bgVideo.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>Welcome to <span>Cinetoon Studios</span></h1>
+            <p>Cinetoon Studios specializes in immersive game development, 
+                responsive web design, and cutting-edge digital experiences that captivate and engage users.
+                Boost your brand with expert SEO, digital marketing, and high-performance websites tailored for success.</p>
+            <a href="https://wa.me/8288983969/?text=Hello, I want a freelance designer!" target="_blank" rel="noopener noreferrer" class="cta-button">Get In Touch</a>
+        </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about ">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About <span>Cinetoon Studios</span></h2>
+                <p>
+                    <strong>Cinetoon Studios</strong> is a leading game development and web design studio, 
+                    crafting immersive digital experiences that captivate and engage. We merge cutting-edge 
+                    technology with creative storytelling to build visually stunning games, responsive websites, 
+                    and innovative digital solutions.
+                </p>
+                <p>
+                    Our mission is to push creative boundaries by delivering high-quality, original projects in 
+                    <strong>game development, website design, branding, and digital marketing</strong>. Whether you need 
+                    an engaging mobile game, a high-performance website, or a strong online presence, we bring 
+                    expertise and innovation to every project.
+                </p>
+                
+                <a href="#portfolio" class="cta-button">Explore Our Work</a>
+            </div>
+            <div class="about-image">
+                <img src="./assets/aboutImage.png" alt="About Cinetoon Studios, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+            </div>
+        </div>
+    </section>
+
+    
+<!--Services Section-->
+    <section class="services" id="services">
+        <h2 class="section-title">Services We Offer</h2>
+        <p class="services_section_description">
+            At <strong>Cinetoon Studios</strong>, We transforms ideas into reality with cutting-edge <strong>game development</strong>, 
+            stunning <strong>website design</strong>, and immersive <strong>digital experiences</strong>. We craft high-quality solutions 
+            that engage users, enhance brands, and drive success.   
+        </p>
+        
+        <div class="services-container">
+            <!-- Website Development -->
+            <div class="service-card">
+                <i class="fas fa-globe"></i>
+                <h3>Website Development</h3>
+                <p>
+                    We design <strong>modern, responsive websites</strong> that boost your <strong>online presence</strong>, improve user experience, 
+                    and drive business growth. Our websites are optimized for speed, SEO, and conversions.
+                </p>                
+            </div>
+    
+            <!-- Game Development -->
+            <div class="service-card">
+                <i class="fas fa-gamepad"></i>
+                <h3>Game Development</h3>
+                <p>
+                    We create <strong>engaging and innovative games</strong> that deliver immersive experiences, captivating players worldwide. 
+                    Our <strong>game development</strong> expertise ensures high-quality graphics, smooth gameplay, and interactive storytelling.
+                </p>                
+            </div>
+    
+            <!-- Graphic Designing -->
+            <div class="service-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Graphic Designing</h3>
+                <p>
+                    We create <strong>eye-catching and professional designs</strong> that reflect your brand's identity and leave a lasting impression. 
+                    Our custom branding and graphic design services ensure uniqueness, creativity, and visual impact.
+                </p>                
+            </div>
+    
+            <!-- Digital Marketing -->
+            <div class="service-card">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Digital Marketing</h3>
+                <p>
+                    We craft <b>strategic digital marketing campaigns</b> designed to boost engagement, enhance brand visibility, and drive business growth. 
+                    Our data-driven approach ensures maximum impact and measurable results.
+                </p>                
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Our Portfolio</h2>
+            <p class="portfolio_section_description">Explore our latest projects in web development, game design, and digital marketing.</p>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <a href="https://www.nine-group.com/9international/" target="_blank" rel="noopener noreferrer"></a><img src="./assets/projects/nineWebsite.png" alt="Nine International Website, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+                    <div class="overlay">
+                        <h3>Website Development</h3>
+                        <p>Custom-built responsive websites.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://rahilsha25.github.io/agro-farm/" target="_blank" rel="noopener noreferrer"></a><img src="./assets/projects/agroWebsite.png" alt="AgroFarm Website, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+                    <div class="overlay">
+                        <h3>Website Development</h3>
+                        <p>Custom-built responsive websites.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://rahilsha25.github.io/explore_engage/" target="_blank" rel="noopener noreferrer"></a><img src="./assets/projects/exploreWebsite.png" alt="Explore & Engage Website, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+                    <div class="overlay">
+                        <h3>SEO Optimization</h3>
+                        <p>Boost rankings with powerful SEO strategies.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://makeoverbynazmin.netlify.app/" target="_blank" rel="noopener noreferrer"></a><img src="./assets/projects/makeoverByNazmin.PNG" alt="Makeover By Nazmin Website, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+                    <div class="overlay">
+                        <h3>Graphic Designing</h3>
+                        <p>Creative and visually appealing graphics.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://rahilsha.itch.io/bolley" target="_blank" rel="noopener noreferrer"></a><img src="./assets/projects/bolleyGame.png" alt="Bolley Android Game, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+                    <div class="overlay">
+                        <h3>Game Development</h3>
+                        <p>Innovative and interactive gaming experiences.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://rahilsha.itch.io/max-run" target="_blank" rel="noopener noreferrer"></a><img src="./assets/projects/maxRunGame.png" alt="Max Run Android Game, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+                    <div class="overlay">
+                        <h3>Game Development</h3>
+                        <p>Innovative and interactive gaming experiences.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://rahilsha.itch.io/flight-simulator" target="_blank" rel="noopener noreferrer"></a><img src="./assets/projects/flightSimulatorGame.png" alt="Flight Simulator for PC, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+                    <div class="overlay">
+                        <h3>Game Development</h3>
+                        <p>Innovative and interactive gaming experiences.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <a href="https://makeoverbynazmin.netlify.app/" target="_blank" rel="noopener noreferrer"></a><img src="./assets/projects/makeoverByNazmin.PNG" alt="Makeover By Nazmin Website, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+                    <div class="overlay">
+                        <h3>Website Development</h3>
+                        <p>Custom-built responsive websites.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <p>Our clients love working with us. Here's what they have to say!</p>
+
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <img src="assets/clients/nineLogo.png" alt="Nine International Logo, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+                <p>"Cinetoon Studios delivered an outstanding Website for our Business. Highly recommend!"</p>
+                <h4>Nine International</h4>
+                <div class="stars">★★★★★</div>
+            </div>
+
+            <div class="testimonial">
+                <img src="assets/clients/nazmin.jpeg" alt="Nazmin Diwan, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+                <p>"Professional, creative, and easy to work with. Amazing experience!"</p>
+                <h4>Nazmin Diwan</h4>
+                <div class="stars">★★★★★</div>
+            </div>
+
+            <div class="testimonial">
+                <img src="assets/clients/explore&engage.jpg" alt="Explore & Engage, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+                <p>"Their design skills are top-notch. Will collaborate again!"</p>
+                <h4>Explore & Engage</h4>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+
+        <!-- Navigation Dots -->
+        <div class="slider-dots"></div>
+    </section>
+
+    <!-- Partners / Collaborations Section -->
+    <section class="partners">
+        <h2>Our Trusted Partners</h2>
+        <p>We collaborate with industry leaders to deliver top-notch services.</p>
+
+        <div class="partner-logos">
+            <div class="logo-track">
+                <img src="assets/partners/explore&engage.jpg" alt="Explore & Engage, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+                <img src="assets/partners/funQCars.jpeg" alt="funQ Cars, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+                <img src="assets/partners/legacy_arts.jpg" alt="Legacy Art's, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+                <img src="assets/partners/LegacyHotels.jpeg" alt="Legacy Hotels, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+                <img src="assets/partners/nineLogo.png" alt="Nine Internationals, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+                <img src="assets/partners/ToonZilla.jpeg" alt="ToonZilla, Website Development Request, SEO Optimization, Graphic Designing, Freelancing, Anand, Gujarat, Game Development, Rahilsha, Freelancer, Top, Best">
+                </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <!-- Left Side: Image & Contact Info -->
+            <div class="contact-info">
+                <h2>Contact us</h2>
+                <div class="contact-details">
+                    <p><i class="fas fa-phone"></i> +91 8288983969</p>
+                    <p><i class="fas fa-envelope"></i> cinetoonstudios@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dethali, Faliyu, Vill: Padgol, Anand, Gujarat 388440</p>
+                </div>
+            </div>
+    
+            <!-- Right Side: Form -->
+            <div class="contact-form" >
+                <h2>Send Us A Message</h2>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Name" name="Name" required>
+                    <input type="email" id="email" placeholder="Email" name="Email" required>
+                    <input type="tel" id="phone" placeholder="Phone" name="Phone" required>
+                
+                    <p>Preferred method of communication</p>
+                    <div class="radio-group">
+                        <label><input type="radio" name="contact-method" value="Email"> Email</label>
+                        <label><input type="radio" name="contact-method" value="Phone"> Phone</label>
+                    </div>
+                
+                    <textarea id="message" name="Message" placeholder="Message" required></textarea>
+                    <button type="submit" id="sendButton">Send</button>
+                </form>
+                <p id="responseMessage"></p>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <!--Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>CINETOON</h2>
+                <p>CineToon Studios is a freelance game and web development studio specializing 
+                    in immersive game design, cutting-edge website development, SEO optimization, 
+                    and digital marketing. We craft engaging gaming experiences, stunning graphics, 
+                    and high-performance websites tailored to boost your brand's digital presence. 
+                    Whether you need custom game development, responsive web design, or strategic 
+                    SEO services, we help businesses and startups enhance their online visibility 
+                    and drive more traffic.</p>
+            </div>
+    
+            <div class="footer-links footerHeadings">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-social footerHeadings">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+    
+            <div class="footer-contact footerHeadings">
+                <h3>Contact Us</h3>
+                <p>Address: Dethali, Faliya, Vill:, Padgol, Anand, Gujarat 388440</p>
+                <p>Email: cinetoonstudios@gmail.com</p>
+                <p>Phone: +91 82889 83969</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 CINETOON STUDIOS. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('8p8twXrk5t8iQaFO8')
+    </script>
+
+
+</body>
+</html>
