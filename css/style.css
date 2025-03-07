@@ -959,6 +959,19 @@ body {
         width: 100%;
         border-radius: 0 0 15px 15px;
     }
+    
+    .contact-details p {
+        display: flex;
+        align-items: flex-start;
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .contact-details i {
+        font-size: 12px;
+        margin-right: 10px;
+        color: #00e4ff;
+    }
 }
 
 
