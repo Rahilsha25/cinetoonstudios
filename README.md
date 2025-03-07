@@ -40,7 +40,7 @@ We optimize websites for higher search rankings, better visibility, and increase
 
 📍 Location: Anand, Gujarat, India
 
-🌎 Website: [Coming Soon]
+🌎 Website: https://cinetoonstudios.netlify.app/
 
 📧 Email: cinetoonstudios@gmail.com
 
