@@ -501,8 +501,8 @@ body {
 /* Testimonials Section -------------------------------------------------------------------------------------------------------------- */
 .testimonials {
     text-align: center;
-    padding: 80px 10%;
-    background: #f7f7f7; /* Light background for contrast */
+    padding: 60px 8%;
+    background: #f7f7f7;
     color: #0a0a0a;
     position: relative;
     overflow: hidden;
@@ -510,7 +510,7 @@ body {
 
 /* Heading & Description */
 .testimonials h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 10px;
     opacity: 0;
@@ -519,32 +519,25 @@ body {
 }
 
 .testimonials p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
     opacity: 0;
     transform: translateY(-20px);
     animation: fadeInUp 1.2s ease forwards;
 }
 
-/* Testimonial Slider */
+/* Testimonial Slider - Adjust for Mobile */
 .testimonial-slider {
     display: flex;
     justify-content: center;
-    gap: 30px;
-    overflow: hidden;
+    gap: 20px;
+    overflow-x: auto;
     scroll-behavior: smooth;
     position: relative;
     max-width: 100%;
-    padding: 20px 0;
-}
-
-/* Responsive Grid */
-.testimonial-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    max-width: 100%;
+    padding: 15px 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
 /* Testimonial Card */
@@ -559,6 +552,7 @@ body {
     opacity: 0;
     transform: scale(0.9);
     animation: fadeInZoom 1s ease forwards;
+    scroll-snap-align: center;
 }
 
 .testimonial:hover {
@@ -568,10 +562,10 @@ body {
 
 /* Client Image */
 .testimonial img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     animation: bounce 1.5s infinite alternate;
 }
 
@@ -583,37 +577,108 @@ body {
 }
 
 .testimonial h4 {
-    font-size: 1.2rem;
-    margin-top: 10px;
+    font-size: 1.1rem;
+    margin-top: 8px;
 }
 
 /* Star Ratings */
 .stars {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #FFD700;
 }
 
-/* Navigation Dots */
-.slider-dots {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 8px;
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 50px 5%;
+    }
+
+    .testimonials h2 {
+        font-size: 1.8rem;
+    }
+
+    .testimonials p {
+        font-size: 1rem;
+    }
+
+    .testimonial-slider {
+        display: block;
+        padding: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .testimonial {
+        margin-bottom: 10px;
+        max-width: 280px;
+        padding: 18px;
+        margin: 0 auto;
+    }
+
+    .testimonial img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .testimonial p {
+        font-size: 0.95rem;
+    }
+
+    .testimonial h4 {
+        font-size: 1rem;
+    }
+
+    .stars {
+        font-size: 1.2rem;
+    }
+
+    .slider-dots span {
+        width: 8px;
+        height: 8px;
+    }
 }
 
-.slider-dots span {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background: #ccc;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s;
-}
+/* Small Mobile Screens (Max 480px) */
+@media (max-width: 480px) {
+    .testimonials {
+        padding: 40px 4%;
+    }
 
-.slider-dots span.active {
-    background: #FFD700;
-    transform: scale(1.2);
+    .testimonials h2 {
+        font-size: 1.6rem;
+    }
+
+    .testimonials p {
+        font-size: 0.95rem;
+    }
+
+    .testimonial {
+        max-width: 250px;
+        padding: 15px;
+    }
+
+    .testimonial img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .testimonial p {
+        font-size: 0.9rem;
+    }
+
+    .testimonial h4 {
+        font-size: 0.95rem;
+    }
+
+    .stars {
+        font-size: 1.1rem;
+    }
+
+    .slider-dots span {
+        width: 7px;
+        height: 7px;
+    }
 }
 
 /* Animations */
@@ -647,6 +712,7 @@ body {
         transform: translateY(-5px);
     }
 }
+
 
 /* 🔹 RESPONSIVE DESIGN ------------------------------------------------------------------------------ */
 @media (max-width: 1024px) {
