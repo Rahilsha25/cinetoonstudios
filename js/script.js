@@ -49,40 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Auto-Sliding Testimonials
-    const testimonials = document.querySelectorAll('.testimonial');
-    const dots = document.querySelector('.slider-dots');
-    let currentIndex = 0;
-
-    if (testimonials.length > 0) {
-        // Create navigation dots dynamically
-        testimonials.forEach((_, index) => {
-            const dot = document.createElement('span');
-            dot.addEventListener('click', () => slideTo(index));
-            dots.appendChild(dot);
-        });
-
-        const allDots = dots.querySelectorAll('span');
-        allDots[0].classList.add('active');
-
-        // Auto slide function
-        function autoSlide() {
-            currentIndex = (currentIndex + 1) % testimonials.length;
-            slideTo(currentIndex);
-        }
-
-        setInterval(autoSlide, 4000); // Auto-slide every 4 seconds
-
-        // Slide to specific index
-        function slideTo(index) {
-            testimonials.forEach((t, i) => {
-                t.style.transform = `translateX(${(i - index) * 110}%)`;
-            });
-
-            allDots.forEach(dot => dot.classList.remove('active'));
-            allDots[index].classList.add('active');
-        }
-    }
+    
 
     // Partner Logos Infinite Scroll
     const logoTrack = document.querySelector(".logo-track");
