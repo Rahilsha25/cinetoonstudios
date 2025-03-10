@@ -1191,13 +1191,14 @@ body {
 }
 
 .about-hero-content {
+    margin-top: 200px;
     position: relative;
     max-width: 800px;
     z-index: 1;
 }
 
 .about-hero-content h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 10px;
     opacity: 0;
@@ -1258,13 +1259,19 @@ body {
         height: 70vh;
         padding: 15px;
     }
-
+    .about-hero-content {
+        margin-top: auto;
+    }
     .about-hero-content h1 {
-        font-size: 2.2rem;
+        font-size: 1.5rem;
+    }
+
+    .about-hero-content h2{
+        font-size: 1rem;
     }
 
     .about-hero-content p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .about-hero-content .btn {
@@ -1798,7 +1805,7 @@ body {
 /* Responsive */
 @media (max-width: 768px) {
     .contact-hero {
-        height: 60vh;
+        height: 100vh;
         padding: 0 5%;
     }
 
@@ -1819,13 +1826,15 @@ body {
 
 /* Contact Info Section -------------------------------------------------------------------------------------------------------*/
 .contact-info-contact-page {
-    padding: 80px 10%;
+    padding: 60px 8%;
     background: #f7f7f7;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1200px;
 }
 
+/* Flex Container */
 .contact-info-container-contact-page {
     display: flex;
     flex-wrap: wrap;
@@ -1837,55 +1846,89 @@ body {
 /* Left: Contact Details */
 .contact-details-contact-page {
     flex: 1;
-    min-width: 300px;
+    min-width: 280px;
     text-align: left;
 }
 
 .contact-details-contact-page h2 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #333;
     margin-bottom: 10px;
 }
 
 .contact-details-contact-page p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #555;
     margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 .contact-item-contact-page {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 1.1rem;
+    gap: 12px;
+    font-size: 1rem;
     margin-bottom: 15px;
     color: #222;
 }
 
 .contact-item-contact-page i {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #00e4ff;
 }
 
 /* Right: Google Map */
 .contact-map-contact-page {
     flex: 1;
-    min-width: 300px;
+    min-width: 280px;
     height: 350px;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive */
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .contact-info-contact-page {
+        height: auto;
+        padding: 50px 6%;
+    }
+}
+
 @media (max-width: 768px) {
     .contact-info-container-contact-page {
         flex-direction: column;
         text-align: center;
     }
 
+    .contact-details-contact-page {
+        text-align: justify;
+    }
+
     .contact-item-contact-page {
-        justify-content: center;
+        justify-content: left;
+    }
+
+    .contact-map-contact-page {
+        width: 100%;
+        height: 300px;
     }
 }
 
+@media (max-width: 480px) {
+    .contact-details-contact-page h2 {
+        font-size: 2rem;
+    }
+
+    .contact-details-contact-page p {
+        font-size: 1rem;
+    }
+
+    .contact-item-contact-page {
+        font-size: 0.9rem;
+    }
+
+    .contact-map-contact-page {
+        height: 250px;
+    }
+}
