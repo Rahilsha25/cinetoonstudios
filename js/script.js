@@ -95,4 +95,39 @@ document.addEventListener("DOMContentLoaded", function () {
         alert(JSON.stringify(err));
         });
     });
+
+    //Portfolio Page
+    let cinetoonSlides = document.querySelectorAll(".cinetoon-slider-item");
+    let cinetoonCurrentIndex = 0;
+
+    function cinetoonShowNextSlide() {
+        cinetoonSlides[cinetoonCurrentIndex].classList.remove("active");
+        cinetoonCurrentIndex = (cinetoonCurrentIndex + 1) % cinetoonSlides.length;
+        cinetoonSlides[cinetoonCurrentIndex].classList.add("active");
+    }
+
+    setInterval(cinetoonShowNextSlide, 5000); // Change slide every 5 seconds
+
+    // Open Modal with Clicked Image
+    window.openLogoModal = function (image) {
+        var modal = document.getElementById("cinetoon-logo-modal");
+        var modalImg = document.getElementById("cinetoon-enlarged-logo");
+
+        modal.style.display = "flex";  // Ensure modal appears
+        modalImg.src = image.src;  // Set clicked image as modal image
+    };
+
+    // Close Modal when Clicking Outside or Close Button
+    window.closeLogoModal = function () {
+        document.getElementById("cinetoon-logo-modal").style.display = "none";
+    };
+
+    // Close Modal When Clicking Outside the Image
+    document.getElementById("cinetoon-logo-modal").addEventListener("click", function (event) {
+        if (event.target === this) {
+            closeLogoModal();
+        }
+    });
+
+    
 });
