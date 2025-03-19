@@ -2245,3 +2245,285 @@ body {
 .cta-button-whatsapp:hover {
     background: #1ebe57;
 }
+
+
+/********************************************************* PORTFOLIO PAGE *****************************************************/
+/*   HERO SECTION   */
+/* Hero Section */
+.portfolio-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 10%;
+    background: linear-gradient(to right, #0f172a, #1e293b);
+    color: #fff;
+}
+
+.portfolio-hero-content {
+    max-width: 600px;
+}
+
+.portfolio-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.portfolio-hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: #00e4ff;
+    color: #000;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #00c3e0;
+}
+
+.portfolio-hero-image img {
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .portfolio-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 5%;
+    }
+
+    .portfolio-hero-image img {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+}
+
+
+/*   Project Showcase Section   */
+/* ================= Portfolio Slider (Unique) ================= */
+.cinetoon-projects-slider {
+    text-align: center;
+    padding: 100px 0;
+    background: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.cinetoon-slider-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.cinetoon-slider-subtext {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Slideshow Wrapper */
+.cinetoon-slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Individual Slide */
+.cinetoon-slider-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Active Slide */
+.cinetoon-slider-item.active {
+    opacity: 1;
+}
+
+/* Slide Image */
+.cinetoon-slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Slide Content */
+.cinetoon-slider-content {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.cinetoon-slider-content h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.cinetoon-slider-content p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.cinetoon-slider-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00e4ff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cinetoon-slider-btn:hover {
+    background: #00c3e0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cinetoon-slider-wrapper {
+        height: 400px;
+    }
+
+    .cinetoon-slider-content {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .cinetoon-slider-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .cinetoon-slider-content p {
+        font-size: 1rem;
+    }
+}
+
+/* ================= Logo Showcase (Unique) ================= */
+.cinetoon-logo-gallery {
+    text-align: center;
+    padding: 100px 10%;
+    background: #f7f7f7;
+}
+
+.cinetoon-logo-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.cinetoon-logo-subtext {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* Logo Grid */
+.cinetoon-logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Logo Item */
+.cinetoon-logo-item {
+    background: #f7f7f7;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.cinetoon-logo-item img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect (Zoom-in) */
+.cinetoon-logo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cinetoon-logo-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Modal for Enlarged View */
+.cinetoon-logo-modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.cinetoon-modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.cinetoon-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cinetoon-logo-gallery {
+        padding: 60px 5%;
+    }
+
+    .cinetoon-logo-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .cinetoon-logo-item img {
+        max-width: 140px;
+    }
+}
