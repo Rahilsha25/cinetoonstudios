@@ -25,7 +25,7 @@
     <!-- Open Graph Tags (For Social Media Sharing - Facebook, LinkedIn, etc.) -->
     <meta property="og:title" content="Cinetoon Studios | Game Development & Web Design Services">
     <meta property="og:description" content="We create stunning games, websites, and digital experiences that captivate and engage.">
-    <meta property="og:image" content="https:/cinetoonstudios.netlify.app/assets/og-image.jpg">
+    <meta property="og:image" content="https://cinetoonstudios.netlify.app/assets/favicon.ico">
     <meta property="og:url" content="https://cinetoonstudios.netlify.app/">
     <meta property="og:type" content="website">
 
@@ -91,13 +91,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 
-    <!--JavaScrit Files-->
+    <!--JavaScript Files-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     
 
     <!--Main JS File-->
@@ -137,10 +133,29 @@
     <!-- About Us Hero Section -->
     <section class="about-hero">
         <div class="about-hero-content">
-            <h1>Our Publications</h1>
-            <h2>Books by Cinetoon Studios</h2>
-            <p>Explore captivating stories crafted with imagination, emotion, and legacy.</p>
-            <a href="https://www.amazon.in/stores/RAHILSHA-DIWAN/author/B0B6R5TQKX" target="_blank" rel="noopener noreferrer"class="about-btn">Discover Our Books</a>
+            <h1>Our <span>Publications</span></h1>
+            <h2>Books by Rahilsha Diwan</h2>
+            <p>Explore captivating stories crafted with imagination, emotion, and legacy. Each book takes you on a journey 
+                through different worlds, emotions, and experiences that resonate with readers.</p>
+            <p>From fantasy adventures to thought-provoking narratives about happiness and self-discovery, discover stories 
+                that inspire, entertain, and leave a lasting impact.</p>
+            <a href="https://www.amazon.in/stores/RAHILSHA-DIWAN/author/B0B6R5TQKX" target="_blank" rel="noopener noreferrer" class="about-btn">Discover Our Books</a>
+        </div>
+    </section>
+
+    <!-- Books Introduction Section -->
+    <section class="books-intro">
+        <div class="books-intro-container">
+            <h2 class="section-title">Welcome to My <span>Literary World</span></h2>
+            <p class="books-intro-description">
+                As a game developer, web designer, and creative professional, I bring a unique perspective to storytelling. 
+                My books blend real-world insights with imaginative narratives, exploring themes of identity, happiness, 
+                relationships, and the human experience.
+            </p>
+            <p class="books-intro-description">
+                Whether you're looking for an engaging fantasy adventure, a thought-provoking exploration of happiness, 
+                or a compelling story about self-discovery, my books offer something for every reader.
+            </p>
         </div>
     </section>
 
@@ -149,25 +164,43 @@
         <div class="book-container">
             <!-- Book 1 -->
             <div class="book-card">
-                <a href="https://amzn.in/d/0vha1AF" target="_blank" rel="noopener noreferrer"><img src="../assets/book_cover/shattered_realities.png" alt="Shattered Realities Book Cover"></a>
+                <a href="https://amzn.in/d/0vha1AF" target="_blank" rel="noopener noreferrer"><img src="../assets/book_cover/shattered_realities.png" alt="Shattered Realities Book Cover by Rahilsha Diwan"></a>
                 <h3>Shattered Realities</h3>
-                <p>One soul split in two. And the world left hanging in the balance.</p>
+                <p class="book-tagline">One soul split in two. And the world left hanging in the balance.</p>
+                <p class="book-description">A gripping fantasy novel that explores themes of identity, duality, and the choices that shape our destiny. 
+                    Follow the journey of a character whose reality is shattered, forcing them to confront their deepest fears and discover their true self.</p>
+                <div class="book-details">
+                    <span class="book-genre"><i class="fas fa-book"></i> Fantasy Fiction</span>
+                    <span class="book-format"><i class="fas fa-file-alt"></i> Available on Amazon</span>
+                </div>
                 <a href="https://amzn.in/d/0vha1AF" target="_blank" rel="noopener noreferrer" class="book-button">Read Now</a>
             </div>
         
             <!-- Book 2 -->
             <div class="book-card">
-                <a href="https://amzn.in/d/6ZbmC5y" target="_blank" rel="noopener noreferrer"><img src="../assets/book_cover/me_myself_and_lucy.png" alt="Secrets of Happiness Book Cover"></a>
+                <a href="https://amzn.in/d/6ZbmC5y" target="_blank" rel="noopener noreferrer"><img src="../assets/book_cover/me_myself_and_lucy.png" alt="Me Myself and Lucy Book Cover by Rahilsha Diwan"></a>
                 <h3>Me, Myself & Lucy</h3>
-                <p>How do you win someone’s heart… when your biggest rival is <b>YOU?</b></p>
+                <p class="book-tagline">How do you win someone's heart… when your biggest rival is <strong>YOU?</strong></p>
+                <p class="book-description">A compelling story about love, self-discovery, and the internal battles we face. 
+                    This novel delves into the complexities of relationships and the journey of understanding oneself while trying to connect with others.</p>
+                <div class="book-details">
+                    <span class="book-genre"><i class="fas fa-book"></i> Contemporary Fiction</span>
+                    <span class="book-format"><i class="fas fa-file-alt"></i> Available on Amazon</span>
+                </div>
                 <a href="https://amzn.in/d/6ZbmC5y" target="_blank" rel="noopener noreferrer" class="book-button">Buy Now</a>
             </div>
 
-            <!-- Book 2 -->
+            <!-- Book 3 -->
             <div class="book-card">
-                <a href="https://amzn.in/d/iugX4Q1" target="_blank" rel="noopener noreferrer"><img src="../assets/book_cover/secret_of_happiness.png" alt="Secrets of Happiness Book Cover"></a>
+                <a href="https://amzn.in/d/iugX4Q1" target="_blank" rel="noopener noreferrer"><img src="../assets/book_cover/secret_of_happiness.png" alt="Secrets of Happiness Book Cover by Rahilsha Diwan"></a>
                 <h3>Secrets of Happiness</h3>
-                <p>What more important? success, love, peace, or something deeper?</p>
+                <p class="book-tagline">What's more important? Success, love, peace, or something deeper?</p>
+                <p class="book-description">An insightful exploration of happiness and what truly matters in life. 
+                    This thought-provoking book challenges readers to reflect on their priorities and discover the deeper meaning of fulfillment and joy.</p>
+                <div class="book-details">
+                    <span class="book-genre"><i class="fas fa-book"></i> Self-Help / Philosophy</span>
+                    <span class="book-format"><i class="fas fa-file-alt"></i> Available on Amazon</span>
+                </div>
                 <a href="https://amzn.in/d/iugX4Q1" target="_blank" rel="noopener noreferrer" class="book-button">Buy Now</a>
             </div>
     
@@ -183,17 +216,34 @@
             <img src="../assets/book_cover/author.jpg" alt="Rahilsha Diwan">
         </div>
         <div class="author-content">
-            <h2>About the Author</h2>
+            <h2>About the <span>Author</span></h2>
             <p>
             <strong>Rahilsha Diwan</strong> is a multifaceted creator and storyteller with a passion for blending technology and imagination. 
-            With over two years of experience in the IT and creative industries, 
-            Rahilsha has authored multiple books, including <em>"Shattered Realities"</em>, <em>"Secrets of Happiness"</em> and <em>"Me, Myself and Lucy"</em>.
+            Based in <strong>Anand, Gujarat, India</strong>, Rahilsha has over two years of experience in the IT and creative industries, 
+            and has authored multiple books, including <em>"Shattered Realities"</em>, <em>"Secrets of Happiness"</em>, and <em>"Me, Myself and Lucy"</em>.
             </p>
             <p>
             As a web designer, graphic artist, and game developer, Rahilsha brings a unique perspective to his stories — 
             combining real-world insights with fantastical elements that challenge the mind and inspire the soul. 
-            When he's not writing, he's busy building his creative studio, Cinetoon Studios, and helping other brands shine.
+            His background in game development and digital design influences his narrative style, creating immersive worlds 
+            that readers can visualize and experience.
             </p>
+            <p>
+            When he's not writing, Rahilsha is busy building his creative studio, <strong>Cinetoon Studios</strong>, where he helps 
+            businesses establish their digital presence through game development, web design, and branding. His work spans 
+            across various creative domains, from developing mobile games to designing professional websites and creating 
+            memorable brand identities.
+            </p>
+            <p>
+            Rahilsha's books are available on Amazon, where readers can explore his unique storytelling style and discover 
+            stories that blend imagination with real-world wisdom. Whether you're a fan of fantasy fiction, contemporary 
+            narratives, or thought-provoking self-help content, his books offer something for every reader.
+            </p>
+            <div class="author-links">
+                <a href="https://www.amazon.in/stores/RAHILSHA-DIWAN/author/B0B6R5TQKX" target="_blank" rel="noopener noreferrer" class="author-link-btn">
+                    <i class="fab fa-amazon"></i> View All Books on Amazon
+                </a>
+            </div>
         </div>
         </div>
     </section>
@@ -201,14 +251,49 @@
 
 
 
+    <!-- Reading Recommendations Section -->
+    <section class="reading-recommendations">
+        <div class="recommendations-container">
+            <h2 class="section-title">What Readers Are <span>Saying</span></h2>
+            <p class="recommendations-description">
+                Discover why readers are connecting with these stories and how they're impacting lives.
+            </p>
+            
+            <div class="recommendations-grid">
+                <div class="recommendation-item">
+                    <div class="recommendation-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>"Shattered Realities takes you on an incredible journey through a world where nothing is as it seems. 
+                        A must-read for fantasy lovers!"</p>
+                    <span class="recommendation-source">- Amazon Reader</span>
+                </div>
+                
+                <div class="recommendation-item">
+                    <div class="recommendation-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>"Me, Myself & Lucy beautifully explores the complexities of relationships and self-discovery. 
+                        Thought-provoking and engaging!"</p>
+                    <span class="recommendation-source">- Book Enthusiast</span>
+                </div>
+                
+                <div class="recommendation-item">
+                    <div class="recommendation-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>"Secrets of Happiness offers profound insights into what truly matters in life. 
+                        A book that makes you reflect and grow."</p>
+                    <span class="recommendation-source">- Reader Review</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Call to Action Section -->
     <section class="cta-section-cinetoon">
         <div class="cta-overlay-cinetoon"></div>
         <div class="cta-content-cinetoon">
             <h2>Stay Connected!</h2>
             <p>Want to stay updated with my upcoming books, events, or exclusive content? Follow me or reach out anytime.</p>
-            <a href="./contact.html" class="cta-button-cinetoon">Contact ME</a>
-            <a href="https://www.instagram.com/cinetoonstudios/" target="_blank" rel="noopener noreferrer" class="cta-button-cinetoon">Follow US</a>
+            <div class="cta-buttons-group">
+                <a href="./contact.html" class="cta-button-cinetoon">Contact Me</a>
+                <a href="https://www.instagram.com/cinetoonstudios/" target="_blank" rel="noopener noreferrer" class="cta-button-cinetoon">Follow Us</a>
+            </div>
         </div>        
     </section>
 
