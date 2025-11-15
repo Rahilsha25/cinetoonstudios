@@ -22,7 +22,7 @@
     <!-- Open Graph Tags (For Social Media Sharing - Facebook, LinkedIn, etc.) -->
     <meta property="og:title" content="Cinetoon Studios | Game Development & Web Design Services">
     <meta property="og:description" content="We create stunning games, websites, and digital experiences that captivate and engage.">
-    <meta property="og:image" content="https:/cinetoonstudios.netlify.app/assets/og-image.jpg">
+    <meta property="og:image" content="https://cinetoonstudios.netlify.app/assets/favicon.ico">
     <meta property="og:url" content="https://cinetoonstudios.netlify.app/">
     <meta property="og:type" content="website">
 
@@ -88,13 +88,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 
-    <!--JavaScrit Files-->
+    <!--JavaScript Files-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     
 
     <!--Main JS File-->
@@ -134,12 +130,54 @@
     <!-- Portfolio Hero Section -->
     <section class="portfolio-hero">
         <div class="portfolio-hero-content">
-            <h1>Showcasing Our Best Creation</h1>
-            <p>Discover our portfolio of stunning logo designs, immersive game development, high-performance websites, and creative digital solutions that bring brands to life.</p>
+            <h1>Showcasing Our Best <span>Creations</span></h1>
+            <p>Discover our portfolio of stunning logo designs, immersive game development projects, high-performance websites, 
+                and creative digital solutions that bring brands to life. Each project represents our commitment to excellence, 
+                innovation, and client success.</p>
+            <p>From mobile games that captivate players to websites that drive business growth, explore how we've helped 
+                businesses across India establish a strong digital presence.</p>
             <a href="#cinetoon-featured-work" class="cta-btn">View Our Work</a>
         </div>
         <div class="portfolio-hero-image">
-            <img src="../assets/backgrounds/contactBackground.jpg" alt="Creative Portfolio Showcase">
+            <img src="../assets/backgrounds/contactBackground.jpg" alt="Creative Portfolio Showcase - Cinetoon Studios">
+        </div>
+    </section>
+
+    <!-- Portfolio Categories Section -->
+    <section class="portfolio-categories">
+        <div class="categories-container">
+            <h2 class="section-title">Our Work <span>Categories</span></h2>
+            <p class="categories-description">
+                We specialize in multiple domains, each requiring unique skills and creative approaches.
+            </p>
+            
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">All Projects</button>
+                <button class="category-tab" data-category="websites">Websites</button>
+                <button class="category-tab" data-category="games">Games</button>
+                <button class="category-tab" data-category="logos">Logo Design</button>
+            </div>
+            
+            <div class="category-info">
+                <div class="category-info-item">
+                    <h3><i class="fas fa-globe"></i> Website Development</h3>
+                    <p>We've developed responsive, SEO-optimized websites for various industries including business, 
+                        agriculture, beauty, and e-commerce. Each website is custom-built to meet specific client needs 
+                        and drive conversions.</p>
+                </div>
+                
+                <div class="category-info-item">
+                    <h3><i class="fas fa-gamepad"></i> Game Development</h3>
+                    <p>Our game portfolio includes hyper-casual mobile games, action games, and PC simulations. 
+                        We've successfully published games on Android platforms and itch.io, reaching players worldwide.</p>
+                </div>
+                
+                <div class="category-info-item">
+                    <h3><i class="fas fa-paint-brush"></i> Logo & Branding</h3>
+                    <p>We've created memorable logos and brand identities for businesses across various sectors. 
+                        Our designs are unique, professional, and reflect each brand's personality and values.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -150,29 +188,62 @@
     
         <div class="cinetoon-slider-wrapper">
             <div class="cinetoon-slider-item active">
-                <img src="../assets/projects/nineWebsite.png" alt="Game Development Project">
+                <img src="../assets/projects/nineWebsite.png" alt="Nine International Website Development">
                 <div class="cinetoon-slider-content">
                     <h3>Website for Nine International</h3>
-                    <p>A thrilling and immersive game designed to captivate players with stunning graphics and engaging mechanics.</p>
+                    <p>A professional, responsive website developed for Nine International, featuring modern design, 
+                        SEO optimization, and seamless user experience. The website showcases their services and 
+                        enhances their online presence.</p>
                     <a href="https://www.nine-group.com/9international/" target="_blank" rel="noopener noreferrer" class="cinetoon-slider-btn">View Project</a>
                 </div>
             </div>
     
             <div class="cinetoon-slider-item">
-                <img src="../assets/projects/agroWebsite.png" alt="Branding & Logo Design">
+                <img src="../assets/projects/agroWebsite.png" alt="AgroFarm Website Development">
                 <div class="cinetoon-slider-content">
                     <h3>Website for AgroFarm</h3>
-                    <p>Creative and professional logo designs that help brands establish a strong and unique identity in their industry.</p>
+                    <p>A comprehensive agricultural website designed to showcase products and services. Features include 
+                        responsive design, modern UI/UX, and optimized performance for better user engagement and conversions.</p>
                     <a href="https://rahilsha25.github.io/agro-farm/" target="_blank" rel="noopener noreferrer" class="cinetoon-slider-btn">View Project</a>
                 </div>
             </div>
     
             <div class="cinetoon-slider-item">
-                <img src="../assets/projects/makeoverByNazmin.PNG" alt="Website Development">
+                <img src="../assets/projects/makeoverByNazmin.PNG" alt="Makeover By Nazmin Website">
                 <div class="cinetoon-slider-content">
-                    <h3>Website for makeoverByNazmin</h3>
-                    <p>High-performance, visually stunning, and fully responsive websites tailored to meet client needs.</p>
+                    <h3>Website for Makeover by Nazmin</h3>
+                    <p>A beautiful, elegant website for a beauty and makeup business. The design reflects the brand's 
+                        aesthetic with stunning visuals, easy navigation, and mobile-responsive layout that drives bookings and inquiries.</p>
                     <a href="https://makeoverbynazmin.netlify.app/" target="_blank" rel="noopener noreferrer" class="cinetoon-slider-btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Statistics Section -->
+    <section class="portfolio-stats">
+        <div class="portfolio-stats-container">
+            <h2 class="section-title">Portfolio <span>Highlights</span></h2>
+            <div class="portfolio-stats-grid">
+                <div class="portfolio-stat-item">
+                    <div class="stat-icon"><i class="fas fa-globe"></i></div>
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Websites Developed</div>
+                </div>
+                <div class="portfolio-stat-item">
+                    <div class="stat-icon"><i class="fas fa-gamepad"></i></div>
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">Games Published</div>
+                </div>
+                <div class="portfolio-stat-item">
+                    <div class="stat-icon"><i class="fas fa-paint-brush"></i></div>
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Logos Designed</div>
+                </div>
+                <div class="portfolio-stat-item">
+                    <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Client Satisfaction</div>
                 </div>
             </div>
         </div>
@@ -180,8 +251,9 @@
 
     <!--   Logo Showcase   -->
     <section class="cinetoon-logo-gallery" id="cinetoon-logo-showcase">
-        <h2 class="cinetoon-logo-title">Creative Logo Designs</h2>
-        <p class="cinetoon-logo-subtext">A collection of logos crafted to bring brands to life with a unique and professional touch.</p>
+        <h2 class="cinetoon-logo-title">Creative Logo <span>Designs</span></h2>
+        <p class="cinetoon-logo-subtext">A collection of professional logos crafted to bring brands to life with a unique and memorable touch. 
+            Each logo is designed to reflect the brand's identity, values, and target audience, ensuring lasting impact and recognition.</p>
     
         <div class="cinetoon-logo-grid">
             <div class="cinetoon-logo-item">
@@ -234,13 +306,61 @@
     
 
 
+    <!-- Case Studies Section -->
+    <section class="case-studies">
+        <div class="case-studies-container">
+            <h2 class="section-title">Success <span>Stories</span></h2>
+            <p class="case-studies-description">
+                Real results from real projects. Here's how we've helped businesses achieve their digital goals.
+            </p>
+            
+            <div class="case-study-list">
+                <div class="case-study-item">
+                    <div class="case-study-header">
+                        <h3><i class="fas fa-briefcase"></i> Nine International - Website Development</h3>
+                        <span class="case-study-category">Web Development</span>
+                    </div>
+                    <div class="case-study-content">
+                        <p><strong>Challenge:</strong> Nine International needed a modern, professional website to showcase their services and improve online visibility.</p>
+                        <p><strong>Solution:</strong> We developed a fully responsive, SEO-optimized website with modern design, fast loading times, and intuitive navigation.</p>
+                        <p><strong>Results:</strong> Improved online presence, increased inquiries, and better brand recognition in their industry.</p>
+                    </div>
+                </div>
+                
+                <div class="case-study-item">
+                    <div class="case-study-header">
+                        <h3><i class="fas fa-gamepad"></i> Bolley Game - Mobile Game Development</h3>
+                        <span class="case-study-category">Game Development</span>
+                    </div>
+                    <div class="case-study-content">
+                        <p><strong>Challenge:</strong> Create an engaging, addictive mobile game that appeals to a wide audience.</p>
+                        <p><strong>Solution:</strong> Developed a hyper-casual game with smooth gameplay, intuitive controls, and engaging mechanics using Unity.</p>
+                        <p><strong>Results:</strong> Successfully published on Android platforms and itch.io, receiving positive player feedback and engagement.</p>
+                    </div>
+                </div>
+                
+                <div class="case-study-item">
+                    <div class="case-study-header">
+                        <h3><i class="fas fa-paint-brush"></i> Multiple Brands - Logo Design & Branding</h3>
+                        <span class="case-study-category">Branding</span>
+                    </div>
+                    <div class="case-study-content">
+                        <p><strong>Challenge:</strong> Various businesses needed unique, memorable logos that reflect their brand identity.</p>
+                        <p><strong>Solution:</strong> Created custom logo designs for 25+ brands across different industries, each tailored to the brand's personality and values.</p>
+                        <p><strong>Results:</strong> Enhanced brand recognition, professional appearance, and stronger brand identity for all clients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Call to Action Section -->
     <section class="cta-section-cinetoon">
         <div class="cta-overlay-cinetoon"></div>
         <div class="cta-content-cinetoon">
             <h2>Bring Your Ideas to Life with Cinetoon Studios!</h2>
-            <p>Need **a game development partner, a cutting-edge website, or a standout brand identity**? We specialize in **creating immersive games, high-performance websites, and powerful digital solutions** that elevate your business.</p>
-            <a href="../pages/contact.html" class="cta-button-cinetoon">Let's Create Something Extraordinary!</a>
+            <p>Need <strong>a game development partner, a cutting-edge website, or a standout brand identity</strong>? We specialize in <strong>creating immersive games, high-performance websites, and powerful digital solutions</strong> that elevate your business.</p>
+            <a href="./contact.html" class="cta-button-cinetoon">Let's Create Something Extraordinary!</a>
         </div>        
     </section>
 
