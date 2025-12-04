@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Development Articles & Tutorials | Cinetoon Studios Blog</title>
+    <meta name="description" content="Expert game development articles, Unity tutorials, indie game ideas, and industry insights. Learn game development, explore creative game concepts, and stay updated with the latest trends in the gaming industry.">
+    <meta name="keywords" content="game development articles, Unity tutorials, indie game ideas, game development India, game development trends, mobile game development, Unity endless runner tutorial, indie game development, game design ideas, gaming industry analysis">
+    <meta name="author" content="Cinetoon Studios">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Game Development Articles & Tutorials | Cinetoon Studios Blog">
+    <meta property="og:description" content="Expert game development articles, Unity tutorials, indie game ideas, and industry insights.">
+    <meta property="og:url" content="https://cinetoonstudios.netlify.app/pages/articles.html">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Game Development Articles & Tutorials">
+    <meta name="twitter:description" content="Expert game development articles, Unity tutorials, and indie game insights.">
+    
+    <!-- Article Schema for Blog Listing -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Cinetoon Studios Game Development Blog",
+        "description": "Expert game development articles, Unity tutorials, indie game ideas, and industry insights",
+        "url": "https://cinetoonstudios.netlify.app/pages/articles.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Cinetoon Studios",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://cinetoonstudios.netlify.app/assets/favicon.ico"
+            }
+        }
+    }
+    </script>
+
+    <link rel="canonical" href="https://cinetoonstudios.netlify.app/pages/articles.html">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/articles-page.js" defer></script>
+</head>
+<body>
+    <div class="loader" role="status" aria-label="Loading page">
+        <span>Loading...</span>
+    </div>
+
+    <header class="navbar" role="banner">
+        <div class="brand-name"><a href="../index.html" aria-label="Cinetoon Studios Home">CINETOON</a></div>
+        <nav role="navigation" aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about-us.html">About Us</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./articles.html" aria-current="page">Articles</a></li>
+                <li><a href="./books.html">Books</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main id="main-content" class="articles-page" tabindex="-1">
+        <section class="article-hero">
+            <p class="section-eyebrow">Gaming & Game Dev</p>
+            <h1>Insights from the <span>Cinetoon Lab</span></h1>
+            <p>
+                Process notes on Unity and Unreal production, looks into our publishing pipeline, and practical lessons from running a boutique studio in Gujarat.
+            </p>
+            <div class="article-hero-meta">
+                <span><i class="fas fa-calendar-week"></i> Updated weekly</span>
+                <span><i class="fas fa-comments"></i> Comments & likes enabled</span>
+            </div>
+        </section>
+
+        <section class="articles-wrapper" id="article-page-root">
+            <div class="article-controls">
+                <label class="search-field" for="articleSearch">
+                    <span class="label-text">Search our knowledge base</span>
+                    <input type="search" id="articleSearch" placeholder="Search by engine, genre, tool, or keyword">
+                </label>
+
+                <div class="article-tags" role="listbox" aria-label="Filter articles by topic">
+                    <button class="tag-chip active" data-tag="all" aria-pressed="true">All topics</button>
+                </div>
+            </div>
+
+            <div class="articles-feed" aria-live="polite">
+                <article class="article-card" id="how-to-create-endless-runner-unity" data-article-id="how-to-create-endless-runner-unity" data-tags="Unity Tutorial,Game Development,Mobile Games" data-category="Unity Tutorial" data-search="unity endless runner tutorial game development mobile games unity scripting">
+                    <div class="article-card-image" style="background-image: url('../assets/backgrounds/mobileBackground.jpg');" role="img" aria-label="Unity Endless Runner Tutorial"></div>
+                    <div class="article-card-body">
+                        <p class="article-meta">
+                            <span>Unity Tutorial</span>
+                            <span>•</span>
+                            <span>Jan 15, 2025</span>
+                            <span>•</span>
+                            <span>12 min read</span>
+                        </p>
+                        <h2>How to Create an Endless Runner in Unity</h2>
+                        <p>A complete step-by-step guide to building your first endless runner game in Unity. Perfect for beginners looking to create engaging mobile games.</p>
+                        <div class="article-tags-inline">
+                            <span>Unity Tutorial</span>
+                            <span>Game Development</span>
+                            <span>Mobile Games</span>
+                        </div>
+                    </div>
+                    <div class="article-preview">
+                        <p>Learn how to create an endless runner game in Unity from scratch. This comprehensive tutorial covers player movement, obstacles, scoring system, and optimization tips for mobile games.</p>
+                        <p class="article-preview-meta">Perfect for developers who have basic knowledge of Unity and C# scripting.</p>
+                        <a class="text-link" href="./articles/how-to-create-endless-runner-unity.html">Read full article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="article-card" id="top-5-indie-game-ideas" data-article-id="top-5-indie-game-ideas" data-tags="Game Design,Indie Development,Creative Ideas" data-category="Game Design" data-search="indie game ideas game development ideas creative game concepts game design">
+                    <div class="article-card-image" style="background-image: url('../assets/backgrounds/graphic-designing.jpg');" role="img" aria-label="Top Indie Game Ideas"></div>
+                    <div class="article-card-body">
+                        <p class="article-meta">
+                            <span>Game Design</span>
+                            <span>•</span>
+                            <span>Jan 10, 2025</span>
+                            <span>•</span>
+                            <span>10 min read</span>
+                        </p>
+                        <h2>Top 5 Indie Game Ideas for 2025</h2>
+                        <p>Explore innovative game concepts perfect for solo developers and small teams. These creative ideas combine unique mechanics with achievable scope for indie developers.</p>
+                        <div class="article-tags-inline">
+                            <span>Game Design</span>
+                            <span>Indie Development</span>
+                            <span>Creative Ideas</span>
+                        </div>
+                    </div>
+                    <div class="article-preview">
+                        <p>Discover five compelling indie game ideas that offer great potential for success while remaining achievable for independent developers. Each concept includes core mechanics, target audience, and development considerations.</p>
+                        <p class="article-preview-meta">Perfect for solo developers and small teams looking to create unique gaming experiences.</p>
+                        <a class="text-link" href="./articles/top-5-indie-game-ideas.html">Read full article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="article-card" id="future-of-indie-games" data-article-id="future-of-indie-games" data-tags="Industry Analysis,Game Development,Trends" data-category="Industry Analysis" data-search="indie games future game development trends independent game industry indie game market">
+                    <div class="article-card-image" style="background-image: url('../assets/backgrounds/services-background.jpg');" role="img" aria-label="Future of Indie Games"></div>
+                    <div class="article-card-body">
+                        <p class="article-meta">
+                            <span>Industry Analysis</span>
+                            <span>•</span>
+                            <span>Jan 5, 2025</span>
+                            <span>•</span>
+                            <span>15 min read</span>
+                        </p>
+                        <h2>The Future of Indie Games in 2025</h2>
+                        <p>Exploring emerging trends, technologies, and opportunities shaping the independent game development landscape. What does the future hold for indie developers?</p>
+                        <div class="article-tags-inline">
+                            <span>Industry Analysis</span>
+                            <span>Game Development</span>
+                            <span>Trends</span>
+                        </div>
+                    </div>
+                    <div class="article-preview">
+                        <p>Comprehensive analysis of the trends, technologies, and market dynamics that will shape the future of indie game development. Understanding these factors is crucial for developers looking to succeed.</p>
+                        <p class="article-preview-meta">Covers emerging technologies, platform trends, marketing challenges, and future opportunities.</p>
+                        <a class="text-link" href="./articles/future-of-indie-games.html">Read full article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="article-card" id="game-development-india-2025" data-article-id="game-development-india-2025" data-tags="Industry Analysis,India,Game Development" data-category="Industry Analysis" data-search="game development India Indian game industry game development opportunities India mobile game development India">
+                    <div class="article-card-image" style="background-image: url('../assets/backgrounds/aboutBackground.jpg');" role="img" aria-label="Game Development in India"></div>
+                    <div class="article-card-body">
+                        <p class="article-meta">
+                            <span>Industry Analysis</span>
+                            <span>•</span>
+                            <span>Jan 1, 2025</span>
+                            <span>•</span>
+                            <span>18 min read</span>
+                        </p>
+                        <h2>Game Development in India 2025</h2>
+                        <p>A comprehensive overview of the rapidly growing game development industry in India. Explore opportunities, challenges, and the future landscape for Indian game developers.</p>
+                        <div class="article-tags-inline">
+                            <span>Industry Analysis</span>
+                            <span>India</span>
+                            <span>Game Development</span>
+                        </div>
+                    </div>
+                    <div class="article-preview">
+                        <p>India's game development industry has experienced remarkable growth, emerging as one of the fastest-growing gaming markets globally. Discover market trends, opportunities, and challenges facing Indian developers.</p>
+                        <p class="article-preview-meta">Covers market size, development hubs, opportunities, challenges, and future prospects.</p>
+                        <a class="text-link" href="./articles/game-development-india-2025.html">Read full article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="article-card" id="unity-liveops-2025" data-article-id="unity-liveops-2025" data-tags="Unity,LiveOps,Mobile" data-category="LiveOps" data-search="unity liveops addressables remote config analytics live ops checklist">
+                    <div class="article-card-image" style="background-image: url('../assets/backgrounds/game-development.jpg');" role="img" aria-label="LiveOps Friendly Unity Projects"></div>
+                    <div class="article-card-body">
+                        <p class="article-meta">
+                            <span>Unity</span>
+                            <span>•</span>
+                            <span>Nov 18, 2025</span>
+                            <span>•</span>
+                            <span>8 min read</span>
+                        </p>
+                        <h2>Building LiveOps Friendly Unity Projects</h2>
+                        <p>Addressables, remote config, and instrumentation tips so every post-launch tweak happens without a redeploy.</p>
+                        <div class="article-tags-inline">
+                            <span>Unity</span>
+                            <span>LiveOps</span>
+                            <span>Mobile</span>
+                        </div>
+                    </div>
+                    <div class="article-preview">
+                        <p>Learn how we structure content packs, toggles, and dashboards to keep free-to-play titles agile.</p>
+                        <p class="article-preview-meta">Includes guard-rail playbooks and rollback rituals.</p>
+                        <a class="text-link" href="./articles/unity-liveops-2025.html">Read full article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="article-card" id="publishing-roadmap-india" data-article-id="publishing-roadmap-india" data-tags="Publishing,Business,India" data-category="Publishing" data-search="publishing roadmap india localisation telemetry soft launch funding pitch deck">
+                    <div class="article-card-image" style="background-image: url('../assets/backgrounds/aboutImage.png');" role="img" aria-label="Publishing Roadmap"></div>
+                    <div class="article-card-body">
+                        <p class="article-meta">
+                            <span>Publishing</span>
+                            <span>•</span>
+                            <span>Oct 07, 2025</span>
+                            <span>•</span>
+                            <span>10 min read</span>
+                        </p>
+                        <h2>Shipping Indie Games from India</h2>
+                        <p>The milestone checklist we complete before pitching APAC or MENA publishers.</p>
+                        <div class="article-tags-inline">
+                            <span>Publishing</span>
+                            <span>Business</span>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    <div class="article-preview">
+                        <p>Prototype metrics, localisation plans, soft-launch budgets, and honest pitch decks.</p>
+                        <p class="article-preview-meta">Built for studios chasing regional publishing partners.</p>
+                        <a class="text-link" href="./articles/publishing-roadmap-india.html">Read full article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="article-card" id="art-pipeline-ai" data-article-id="art-pipeline-ai" data-tags="Art,AI,Production" data-category="Art" data-search="concept art ai workflow diffusion guard rails perforce transparency">
+                    <div class="article-card-image" style="background-image: url('../assets/backgrounds/graphic-designing.jpg');" role="img" aria-label="AI Art Pipelines"></div>
+                    <div class="article-card-body">
+                        <p class="article-meta">
+                            <span>Art</span>
+                            <span>•</span>
+                            <span>Sep 15, 2025</span>
+                            <span>•</span>
+                            <span>6 min read</span>
+                        </p>
+                        <h2>Concept Art Pipelines When AI Joins</h2>
+                        <p>Guard rails for Midjourney explorations, paint-over sprints, and client transparency.</p>
+                        <div class="article-tags-inline">
+                            <span>Art</span>
+                            <span>AI</span>
+                            <span>Production</span>
+                        </div>
+                    </div>
+                    <div class="article-preview">
+                        <p>See how we tag prompts, manage PSDs, and reassure stakeholders that humans stay in control.</p>
+                        <p class="article-preview-meta">Perfect for art leads blending traditional and AI workflows.</p>
+                        <a class="text-link" href="./articles/art-pipeline-ai.html">Read full article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="article-card" id="telemetry-ux-loops" data-article-id="telemetry-ux-loops" data-tags="UX,Analytics,Design" data-category="UX" data-search="ux telemetry mixpanel funnels heatmaps research dashboards interviews">
+                    <div class="article-card-image" style="background-image: url('../assets/backgrounds/services-background.jpg');" role="img" aria-label="Telemetry for UX"></div>
+                    <div class="article-card-body">
+                        <p class="article-meta">
+                            <span>UX</span>
+                            <span>•</span>
+                            <span>Aug 30, 2025</span>
+                            <span>•</span>
+                            <span>7 min read</span>
+                        </p>
+                        <h2>Designing Telemetry Loops for UX Decisions</h2>
+                        <p>How Mixpanel funnels, heatmaps, and moderated interviews work in tandem.</p>
+                        <div class="article-tags-inline">
+                            <span>UX</span>
+                            <span>Analytics</span>
+                            <span>Design</span>
+                        </div>
+                    </div>
+                    <div class="article-preview">
+                        <p>Build dashboards that live beside design docs so teams react to evidence, not gut feel.</p>
+                        <p class="article-preview-meta">Includes research cadences and alerting tips.</p>
+                        <a class="text-link" href="./articles/telemetry-ux-loops.html">Read full article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="article-card" id="console-porting-checklist" data-article-id="console-porting-checklist" data-tags="Console,Optimization,Production" data-category="Console" data-search="console porting checklist certification xbox playstation submission patches">
+                    <div class="article-card-image" style="background-image: url('../assets/backgrounds/mobileBackground.jpg');" role="img" aria-label="Console Porting Checklist"></div>
+                    <div class="article-card-body">
+                        <p class="article-meta">
+                            <span>Console</span>
+                            <span>•</span>
+                            <span>Aug 05, 2025</span>
+                            <span>•</span>
+                            <span>9 min read</span>
+                        </p>
+                        <h2>Our Console Porting Checklist</h2>
+                        <p>The optimization passes, certification swim lanes, and patch rehearsals we run before submission.</p>
+                        <div class="article-tags-inline">
+                            <span>Console</span>
+                            <span>Optimization</span>
+                            <span>Production</span>
+                        </div>
+                    </div>
+                    <div class="article-preview">
+                        <p>Includes performance profiling tactics, QA accountability, and day-one patch drills.</p>
+                        <p class="article-preview-meta">Use it as a pre-cert audit list.</p>
+                        <a class="text-link" href="./articles/console-porting-checklist.html">Read full article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>CINETOON</h2>
+                <p>
+                    CineToon Studios crafts immersive games, marketing-ready websites, SEO roadmaps, and bold brand narratives from Anand, Gujarat.
+                    We turn indie dreams into playable experiences and ship polished web platforms for ambitious founders.
+                </p>
+            </div>
+
+            <div class="footer-links footerHeadings">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about-us.html">About Us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./articles.html">Articles</a></li>
+                    <li><a href="./books.html">Books</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social footerHeadings">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/cinetoonstudios" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/cinetoonstudios" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/cinetoon-studios/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@cinetoon-studios" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-contact footerHeadings">
+                <h3>Contact Us</h3>
+                <p>Address: Dethali, Faliya, Vill:, Padgol, Anand, Gujarat 388440</p>
+                <p>Email: cinetoonstudios@gmail.com</p>
+                <p>Phone: +91 82889 83969</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 CINETOON STUDIOS. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
