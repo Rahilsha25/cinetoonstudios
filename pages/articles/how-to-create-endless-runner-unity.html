@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Create an Endless Runner in Unity - Complete Guide 2025 | Cinetoon Studios</title>
+    <meta name="description" content="Learn how to create an endless runner game in Unity from scratch. Step-by-step tutorial covering player movement, obstacles, scoring system, and optimization tips for mobile games.">
+    <meta name="keywords" content="unity endless runner tutorial, unity game development, mobile game development, unity 2d game, game development tutorial, endless runner game, unity scripting">
+    <meta name="author" content="Cinetoon Studios">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How to Create an Endless Runner in Unity - Complete Guide 2025">
+    <meta property="og:description" content="Complete step-by-step guide to building an endless runner game in Unity. Perfect for beginners and intermediate developers.">
+    <meta property="og:url" content="https://cinetoonstudios.netlify.app/pages/articles/how-to-create-endless-runner-unity.html">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Create an Endless Runner in Unity - Complete Guide">
+    <meta name="twitter:description" content="Learn Unity game development with this comprehensive endless runner tutorial.">
+    
+    <!-- Article Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "How to Create an Endless Runner in Unity - Complete Guide 2025",
+        "description": "Complete step-by-step guide to building an endless runner game in Unity",
+        "author": {
+            "@type": "Organization",
+            "name": "Cinetoon Studios"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Cinetoon Studios",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://cinetoonstudios.netlify.app/assets/favicon.ico"
+            }
+        },
+        "datePublished": "2025-01-15",
+        "dateModified": "2025-01-15",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://cinetoonstudios.netlify.app/pages/articles/how-to-create-endless-runner-unity.html"
+        }
+    }
+    </script>
+
+    <link rel="canonical" href="https://cinetoonstudios.netlify.app/pages/articles/how-to-create-endless-runner-unity.html">
+    <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="../../js/script.js" defer></script>
+    <script src="../../js/articles-page.js" defer></script>
+</head>
+<body>
+    <div class="loader" role="status" aria-label="Loading page">
+        <span>Loading...</span>
+    </div>
+
+    <header class="navbar" role="banner">
+        <div class="brand-name"><a href="../../index.html" aria-label="Cinetoon Studios Home">CINETOON</a></div>
+        <nav role="navigation" aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../about-us.html">About Us</a></li>
+                <li><a href="../services.html">Services</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../articles.html">Articles</a></li>
+                <li><a href="../books.html">Books</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main class="article-detail-page" data-article-detail data-article-id="how-to-create-endless-runner-unity">
+        <article itemscope itemtype="https://schema.org/Article">
+            <section class="article-detail-hero">
+                <p class="section-eyebrow">Unity Tutorial • Game Development • Mobile Games</p>
+                <h1 itemprop="headline">How to Create an Endless Runner in Unity</h1>
+                <p class="article-subtitle">A complete step-by-step guide to building your first endless runner game in Unity. Perfect for beginners looking to create engaging mobile games.</p>
+                <div class="article-detail-meta">
+                    <span><i class="fas fa-calendar-alt"></i> <time itemprop="datePublished" datetime="2025-01-15">Jan 15, 2025</time></span>
+                    <span><i class="fas fa-clock"></i> 12 min read</span>
+                    <span><i class="fas fa-user"></i> Cinetoon Studios</span>
+                </div>
+            </section>
+
+            <section class="article-detail-body">
+                <div class="article-detail-cover" style="background-image: url('../../assets/backgrounds/mobileBackground.jpg');" role="img" aria-label="Unity Endless Runner Game Development"></div>
+                
+                <div class="article-layout">
+                    <div class="article-detail-content" itemprop="articleBody">
+                        <div class="article-content-block" id="runner-overview">
+                            <h2>Why Build an Endless Runner?</h2>
+                            <p>Endless runners are fast to prototype, easy to extend, and packed with reusable systems—perfect for beginners or indie teams who want a polished release on mobile, PC, or WebGL. This step-by-step tutorial walks you through the exact process we use at Cinetoon Studios to ship production-ready runners.</p>
+                            <div class="article-callout">
+                                <p>You will end up with auto-forward movement, lane switching, procedural tiles, obstacle spawning, score tracking, difficulty ramps, and a clean UI—all built with beginner-friendly Unity and C#.</p>
+                            </div>
+                        </div>
+
+                        <div class="article-content-block" id="runner-setup">
+                            <h2>Project Setup Checklist</h2>
+                            <ul>
+                                <li>Unity 2021 LTS or newer (any recent version works).</li>
+                                <li>Basic C# knowledge plus familiarity with the Unity editor.</li>
+                                <li>3D assets or primitives (Unity Asset Store has plenty of free packs).</li>
+                            </ul>
+                            <p>Create a new 3D project named <strong>EndlessRunner</strong>. In the opening scene:</p>
+                            <ul>
+                                <li>Add a <em>Ground</em> plane, test obstacles (cubes), and a Main Camera behind the player.</li>
+                                <li>Create a capsule named <em>Player</em> with a <strong>Rigidbody</strong> and <strong>Capsule Collider</strong>. Disable gravity if you want floating movement, leave it on for jump-based runners.</li>
+                            </ul>
+                        </div>
+
+                        <div class="article-content-block" id="runner-movement">
+                            <h2>Step 1: Auto Movement & Lane Switching</h2>
+                            <p>Attach <code>PlayerController.cs</code> to the Player object to handle auto forward motion and lane selection.</p>
+<pre><code>public class PlayerController : MonoBehaviour
+{
+    public float forwardSpeed = 10f;
+    public float laneDistance = 3f;
+    private int currentLane = 1; // 0 = left, 1 = center, 2 = right
+
+    void Update()
+    {
+        transform.Translate(Vector3.forward * forwardSpeed * Time.deltaTime);
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow)) MoveLane(-1);
+        if (Input.GetKeyDown(KeyCode.RightArrow)) MoveLane(1);
+    }
+
+    void MoveLane(int direction)
+    {
+        currentLane = Mathf.Clamp(currentLane + direction, 0, 2);
+        Vector3 target = transform.position;
+        target.x = (currentLane - 1) * laneDistance;
+        transform.position = target;
+    }
+}</code></pre>
+                            <p>This foundation works with keyboard, swipe, or virtual buttons. Later you can swap the input layer without rewriting the movement logic.</p>
+                        </div>
+
+                        <div class="article-content-block" id="runner-track">
+                            <h2>Step 2: Infinite Track Generation</h2>
+                            <p>Create a 20-unit-long ground prefab populated with props or obstacles. Then use <code>TileSpawner.cs</code> to keep spawning new tiles ahead of the player while recycling old ones.</p>
+<pre><code>public class TileSpawner : MonoBehaviour
+{
+    public GameObject tilePrefab;
+    public Transform player;
+    public float tileLength = 20f;
+    public int tilesOnScreen = 5;
+
+    private readonly List&lt;GameObject&gt; tiles = new();
+    private float spawnZ = 0f;
+
+    void Start()
+    {
+        for (int i = 0; i &lt; tilesOnScreen; i++) SpawnTile();
+    }
+
+    void Update()
+    {
+        if (player.position.z - 40 &gt; spawnZ - tilesOnScreen * tileLength)
+        {
+            SpawnTile();
+            DeleteTile();
+        }
+    }
+
+    void SpawnTile()
+    {
+        var tile = Instantiate(tilePrefab, Vector3.forward * spawnZ, Quaternion.identity);
+        tiles.Add(tile);
+        spawnZ += tileLength;
+    }
+
+    void DeleteTile()
+    {
+        Destroy(tiles[0]);
+        tiles.RemoveAt(0);
+    }
+}</code></pre>
+                            <p>This lightweight pooling pattern keeps draw calls low even on entry-level phones.</p>
+                        </div>
+
+                        <div class="article-content-block" id="runner-obstacles">
+                            <h2>Step 3: Dynamic Obstacles</h2>
+                            <p>Inside each tile prefab, add empty child objects named <em>SpawnPoints</em>. Use the following script to randomly populate them with obstacles:</p>
+<pre><code>public class ObstacleSpawner : MonoBehaviour
+{
+    public GameObject obstaclePrefab;
+
+    void Start()
+    {
+        foreach (Transform point in transform)
+        {
+            if (Random.value &gt; 0.5f)
+            {
+                Instantiate(obstaclePrefab, point.position, point.rotation);
+            }
+        }
+    }
+}</code></pre>
+                            <p>Mix spawn probabilities, obstacle types, and even moving hazards to raise the skill ceiling.</p>
+                        </div>
+
+                        <div class="article-content-block" id="runner-collisions">
+                            <h2>Step 4: Collisions & Game Over Flow</h2>
+                            <p>Extend <code>PlayerController</code> with collision detection:</p>
+<pre><code>private void OnCollisionEnter(Collision collision)
+{
+    if (collision.gameObject.CompareTag("Obstacle"))
+    {
+        Time.timeScale = 0f;
+        Debug.Log("GAME OVER!");
+        // Trigger UI panel + restart button here.
+    }
+}</code></pre>
+                            <p>Pair this with an overlay UI that shows score, best distance, and CTA buttons for restart or home.</p>
+                        </div>
+
+                        <div class="article-content-block" id="runner-score">
+                            <h2>Step 5: Scoring & Difficulty Scaling</h2>
+                            <p>Track forward progress and display it in a HUD:</p>
+<pre><code>public class ScoreManager : MonoBehaviour
+{
+    public Text scoreText;
+    public Transform player;
+
+    void Update()
+    {
+        scoreText.text = Mathf.FloorToInt(player.position.z).ToString();
+    }
+}</code></pre>
+                            <p>Increase <code>forwardSpeed</code> gradually inside <code>Update()</code> to keep runs tense. You can also shorten tile lengths, spawn more hazards, or add moving obstacles as distance milestones are hit.</p>
+                        </div>
+
+                        <div class="article-content-block" id="runner-polish">
+                            <h2>Step 6: UI, FX, and Mobile Export</h2>
+                            <ul>
+                                <li><strong>UI:</strong> Build a start menu, pause screen, and game-over card with large tap targets.</li>
+                                <li><strong>Effects:</strong> Add particle bursts, motion blur, camera shake, and trail renderers for speed cues.</li>
+                                <li><strong>Audio:</strong> Layer running loops, swipe sounds, and impact effects.</li>
+                                <li><strong>Touch controls:</strong> Replace arrow keys with swipe gestures (left/right to lane swap, up for jump, down for slide).</li>
+                                <li><strong>Build settings:</strong> Switch to Android/iOS, set iconography, and test on physical hardware.</li>
+                            </ul>
+                        </div>
+
+                        <div class="article-content-block" id="runner-tips">
+                            <h2>Final Tips for a Publishable Runner</h2>
+                            <ul>
+                                <li>Keep the core loop fun within the first five seconds.</li>
+                                <li>Introduce new obstacles progressively; make death feel fair.</li>
+                                <li>Use short daily missions or limited-time objectives to boost retention.</li>
+                                <li>Profile frequently—object pooling, texture atlases, and Addressables keep mobile builds lean.</li>
+                                <li>Ship updates often; community feedback is the fastest way to identify sticky features.</li>
+                            </ul>
+                            <p>Endless runners are an ideal crash course in player movement, procedural content, scoring systems, and UI polish. Start small, iterate weekly, and you can transform this prototype into a commercial release.</p>
+                        </div>
+                    </div>
+
+                    <aside class="article-side-nav" aria-label="More articles">
+                        <h3>Jump to another read</h3>
+                        <p>Explore our full mix of production, art, and business guides.</p>
+                        <ul class="article-side-nav-list">
+                            <li>
+                                <a href="./how-to-create-endless-runner-unity.html" aria-current="page">
+                                    <strong>Build an Endless Runner in Unity</strong>
+                                    <span>Hands-on tutorial</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./top-5-indie-game-ideas.html">
+                                    <strong>Top 5 Indie Game Ideas</strong>
+                                    <span>Scope-friendly concepts</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./future-of-indie-games.html">
+                                    <strong>The Future of Indie Games</strong>
+                                    <span>Trends & outlook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./game-development-india-2025.html">
+                                    <strong>Game Dev in India 2025</strong>
+                                    <span>Market analysis</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./unity-liveops-2025.html">
+                                    <strong>LiveOps-Friendly Unity Projects</strong>
+                                    <span>Ops architecture</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./publishing-roadmap-india.html">
+                                    <strong>Publishing Roadmap from India</strong>
+                                    <span>Pitch-ready checklist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./art-pipeline-ai.html">
+                                    <strong>Concept Art Pipelines with AI</strong>
+                                    <span>Hybrid workflows</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./telemetry-ux-loops.html">
+                                    <strong>Telemetry Loops for UX</strong>
+                                    <span>Data + research</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./console-porting-checklist.html">
+                                    <strong>Console Porting Checklist</strong>
+                                    <span>Cert prep guide</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <div class="article-detail-actions">
+                    <button type="button" class="like-button"><i class="fas fa-heart"></i> <span>0 Likes</span></button>
+                    <a class="text-link" href="../articles.html"><i class="fas fa-arrow-left"></i> Back to articles</a>
+                </div>
+
+                <div class="article-detail-comments article-comments">
+                    <div class="comments-header">
+                        <h3>Comments</h3>
+                        <span class="comment-count">0</span>
+                    </div>
+                    <ul class="comment-list">
+                        <li class="comment-empty">Be the first to share feedback on this article.</li>
+                    </ul>
+                    <form class="comment-form">
+                        <label>
+                            <span class="label-text">Name</span>
+                            <input type="text" name="commenter" maxlength="40" required placeholder="Your name">
+                        </label>
+                        <label>
+                            <span class="label-text">Comment</span>
+                            <textarea name="comment" rows="3" maxlength="400" required placeholder="Share your thoughts or ask questions"></textarea>
+                        </label>
+                        <button type="submit">Post Comment</button>
+                    </form>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>CINETOON</h2>
+                <p>
+                    CineToon Studios crafts immersive games, marketing-ready websites, SEO roadmaps, and bold brand narratives from Anand, Gujarat.
+                    We turn indie dreams into playable experiences and ship polished web platforms for ambitious founders.
+                </p>
+            </div>
+
+            <div class="footer-links footerHeadings">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../about-us.html">About Us</a></li>
+                    <li><a href="../services.html">Services</a></li>
+                    <li><a href="../portfolio.html">Portfolio</a></li>
+                    <li><a href="../articles.html">Articles</a></li>
+                    <li><a href="../books.html">Books</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social footerHeadings">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/cinetoonstudios" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/cinetoonstudios" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/cinetoon-studios/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@cinetoon-studios" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-contact footerHeadings">
+                <h3>Contact Us</h3>
+                <p>Address: Dethali, Faliya, Vill:, Padgol, Anand, Gujarat 388440</p>
+                <p>Email: cinetoonstudios@gmail.com</p>
+                <p>Phone: +91 82889 83969</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 CINETOON STUDIOS. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building LiveOps Friendly Unity Projects | Cinetoon Studios</title>
+    <meta name="description" content="Cinetoon Studios shares the exact Unity LiveOps architecture we use—addressables, remote config toggles, and analytics glue for post-launch agility.">
+
+    <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="../../js/script.js" defer></script>
+    <script src="../../js/articles-page.js" defer></script>
+</head>
+<body>
+    <div class="loader" role="status" aria-label="Loading page">
+        <span>Loading...</span>
+    </div>
+
+    <header class="navbar" role="banner">
+        <div class="brand-name"><a href="../../index.html" aria-label="Cinetoon Studios Home">CINETOON</a></div>
+        <nav role="navigation" aria-label="Main navigation">
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../about-us.html">About Us</a></li>
+                <li><a href="../services.html">Services</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../articles.html">Articles</a></li>
+                <li><a href="../books.html">Books</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main class="article-detail-page" data-article-detail data-article-id="unity-liveops-2025">
+        <section class="article-detail-hero">
+            <p class="section-eyebrow">Unity • LiveOps • Mobile</p>
+            <h1>Building LiveOps Friendly Unity Projects</h1>
+            <p>LiveOps isn’t DLC—it's the nervous system of every free-to-play title we ship. Here’s the checklist we run before launch day.</p>
+            <div class="article-detail-meta">
+                <span><i class="fas fa-calendar-alt"></i> Nov 18, 2025</span>
+                <span><i class="fas fa-clock"></i> 8 min read</span>
+            </div>
+        </section>
+
+        <section class="article-detail-body">
+            <div class="article-detail-cover" style="background-image: url('../../assets/backgrounds/game-development.jpg');" role="img" aria-label="Unity LiveOps best practices"></div>
+            
+            <div class="article-layout">
+                <div class="article-detail-content" itemprop="articleBody">
+                    <div class="article-content-block" id="liveops-day-zero">
+                        <h2>LiveOps Starts on Day Zero</h2>
+                        <p>Everything players may want to tweak post-launch—cosmetics, balance, even camera offsets—lives inside Addressables. UI atlases never sit in the base APK; they are delivered as hot-swappable content packs so marketing experiments don’t wait for a programmer.</p>
+                        <ul>
+                            <li>Ship storefront art, seasonal skins, and UI layouts as remote bundles.</li>
+                            <li>Version every Addressable group so rollbacks take minutes, not patches.</li>
+                            <li>Keep bundle sizes lean to respect cellular downloads.</li>
+                        </ul>
+                    </div>
+
+                    <div class="article-content-block" id="remote-config">
+                        <h2>Remote Config Owns the Truth</h2>
+                        <p>ScriptableObjects provide safe defaults, but Firebase Remote Config decides what is live. Difficulty curves, economy multipliers, and limited-time quests all reference a shared “knobs” document so designers, producers, and marketers tweak the same source of truth.</p>
+                        <div class="article-callout">
+                            <p>Goal: flip experiments without redeploying. Every LiveOps toggle is documented with owner, guardrail values, and rollback notes.</p>
+                        </div>
+                    </div>
+
+                    <div class="article-content-block" id="instrumentation">
+                        <h2>Instrumentation Mirrors Design Pillars</h2>
+                        <p>Beyond DAU and retention, we chart:</p>
+                        <ul class="article-key-points">
+                            <li>Unlock cadence and difficulty spikes per cohort.</li>
+                            <li>Failure moments tied to specific LiveOps pushes.</li>
+                            <li>Percent of players engaging with optional loops or events.</li>
+                        </ul>
+                        <p>If a quest drop-off appears within an hour of a push, the dashboard links to the responsible toggle so we can revert instantly.</p>
+                    </div>
+
+                    <div class="article-content-block" id="guard-rails">
+                        <h2>Guard Rails & Recovery Plans</h2>
+                        <p>Every content push runs through a staging track with synthetic wallets. QA maintains a “rollback cookbook” that anyone on-call can follow without pinging a lead. LiveOps should feel agile, but only when the recovery plan is written first.</p>
+                    </div>
+                </div>
+
+                <aside class="article-side-nav" aria-label="More articles">
+                    <h3>Jump to another read</h3>
+                    <p>Explore the full Cinetoon knowledge base.</p>
+                    <ul class="article-side-nav-list">
+                        <li>
+                            <a href="./how-to-create-endless-runner-unity.html">
+                                <strong>Build an Endless Runner in Unity</strong>
+                                <span>Hands-on tutorial</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./top-5-indie-game-ideas.html">
+                                <strong>Top 5 Indie Game Ideas</strong>
+                                <span>Scope-friendly concepts</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./future-of-indie-games.html">
+                                <strong>The Future of Indie Games</strong>
+                                <span>Trends & outlook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./game-development-india-2025.html">
+                                <strong>Game Dev in India 2025</strong>
+                                <span>Market analysis</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./unity-liveops-2025.html" aria-current="page">
+                                <strong>LiveOps-Friendly Unity Projects</strong>
+                                <span>Ops architecture</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./publishing-roadmap-india.html">
+                                <strong>Publishing Roadmap from India</strong>
+                                <span>Pitch-ready checklist</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./art-pipeline-ai.html">
+                                <strong>Concept Art Pipelines with AI</strong>
+                                <span>Hybrid workflows</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./telemetry-ux-loops.html">
+                                <strong>Telemetry Loops for UX</strong>
+                                <span>Data + research</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./console-porting-checklist.html">
+                                <strong>Console Porting Checklist</strong>
+                                <span>Cert prep guide</span>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+            <div class="article-detail-actions">
+                <button type="button" class="like-button"><i class="fas fa-heart"></i> <span>0 Likes</span></button>
+                <a class="text-link" href="../articles.html"><i class="fas fa-arrow-left"></i> Back to articles</a>
+            </div>
+
+            <div class="article-detail-comments article-comments">
+                <div class="comments-header">
+                    <h3>Comments</h3>
+                    <span class="comment-count">0</span>
+                </div>
+                <ul class="comment-list">
+                    <li class="comment-empty">Be the first to share feedback on this article.</li>
+                </ul>
+                <form class="comment-form">
+                    <label>
+                        <span class="label-text">Name</span>
+                        <input type="text" name="commenter" maxlength="40" required placeholder="Player name">
+                    </label>
+                    <label>
+                        <span class="label-text">Comment</span>
+                        <textarea name="comment" rows="3" maxlength="400" required placeholder="Share your point of view"></textarea>
+                    </label>
+                    <button type="submit">Post Comment</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>CINETOON</h2>
+                <p>
+                    CineToon Studios crafts immersive games, marketing-ready websites, SEO roadmaps, and bold brand narratives from Anand, Gujarat.
+                </p>
+            </div>
+
+            <div class="footer-links footerHeadings">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../about-us.html">About Us</a></li>
+                    <li><a href="../services.html">Services</a></li>
+                    <li><a href="../portfolio.html">Portfolio</a></li>
+                    <li><a href="../articles.html">Articles</a></li>
+                    <li><a href="../books.html">Books</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social footerHeadings">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/cinetoonstudios" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/cinetoonstudios" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/cinetoon-studios/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@cinetoon-studios" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-contact footerHeadings">
+                <h3>Contact Us</h3>
+                <p>Address: Dethali, Faliya, Vill:, Padgol, Anand, Gujarat 388440</p>
+                <p>Email: cinetoonstudios@gmail.com</p>
+                <p>Phone: +91 82889 83969</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 CINETOON STUDIOS. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
